@@ -7,7 +7,6 @@ class Repository(object):
 
     def exists_subject(self, subject_name):
         result = self._session.query(Subject).filter(Subject.name == subject_name).all()
-        print(result)
         return len(result) == 1
 
     def add_subject(self,subject_name, semester_number: int):
