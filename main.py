@@ -1,6 +1,5 @@
 import telebot
 from decouple import config
-from bd.Database import DB
 from helpers.helpers import get_parameters
 from service.Service import Service
 
