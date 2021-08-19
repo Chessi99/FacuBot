@@ -9,7 +9,7 @@ bot = telebot.TeleBot(API_TOKEN_BOT, parse_mode=None)
 service = Service()
 
 # /agregar_materia NOMBRE_MATERIA, NUMERO_SEMESTRE
-@bot.message_handler(commands=['agregar_materia', 'help'])
+@bot.message_handler(commands=['agregar_materia'])
 def add_subject(message):
     parameters = get_parameters(message.text)
     print(parameters)
